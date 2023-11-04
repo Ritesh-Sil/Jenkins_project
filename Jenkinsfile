@@ -8,5 +8,11 @@ pipeline{
             }
         }
 
+        stage("Trigger file"){
+            steps {
+                sh "python3 Hello_jenkins.py"
+            }
+        }
+
     }        
 }
